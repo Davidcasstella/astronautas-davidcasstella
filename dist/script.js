@@ -94,14 +94,14 @@
     const hero = document.querySelector('.hero');
     const astronaut = document.querySelector('.astronaut-wrap');
     hero.addEventListener('pointermove', (event) => {
-      const x = (event.clientX / window.innerWidth - .5) * 12;
-      const y = (event.clientY / window.innerHeight - .5) * 9;
-      astronaut.style.marginRight = `${x}px`;
-      astronaut.style.marginTop = `${y}px`;
+      const x = (event.clientX / window.innerWidth - .5) * 8;
+      const y = (event.clientY / window.innerHeight - .5) * 6;
+      astronaut.style.setProperty('--visor-pointer-x', `${x}px`);
+      astronaut.style.setProperty('--visor-pointer-y', `${y}px`);
     }, { passive: true });
     hero.addEventListener('pointerleave', () => {
-      astronaut.style.marginRight = '';
-      astronaut.style.marginTop = '';
+      astronaut.style.setProperty('--visor-pointer-x', '0px');
+      astronaut.style.setProperty('--visor-pointer-y', '0px');
     });
   }
 })();
