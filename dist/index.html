@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090304">
+  <meta name="description" content="Nova Space Museum — an immersive journey beyond the horizon.">
+  <title>Nova — Beyond the Horizon</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='25' fill='%23080405' stroke='%23f02a2a' stroke-width='4'/%3E%3Ccircle cx='32' cy='32' r='9' fill='%23f3eee8'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <header class="site-header" id="site-header">
+    <a class="brand" href="#home" aria-label="Nova Space Museum home">
+      <span class="brand__mark" aria-hidden="true"></span>
+      <span>Into the unseen</span>
+    </a>
+
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav">
+      <span></span><span></span>
+      <span class="sr-only">Open navigation</span>
+    </button>
+
+    <nav class="main-nav" id="main-nav" aria-label="Main navigation">
+      <a href="#exhibition">The exhibition</a>
+      <a href="#museum">Museum</a>
+      <a href="#visit">Visit</a>
+      <button class="nav-ticket" type="button" data-open-tickets>Tickets</button>
+    </nav>
+  </header>
+
+  <main id="main-content" class="bkn-slider">
+    <section class="hero bkn-slide bkn-slide-1" id="home" data-section="01" aria-labelledby="hero-title">
+      <div class="hero__background" aria-hidden="true"></div>
+      <div class="hero__motion" aria-hidden="true">
+        <video autoplay muted loop playsinline preload="metadata">
+          <source src="assets/Transparent%20video-2.webm" type="video/webm">
+        </video>
+      </div>
+      <div class="hero__grain" aria-hidden="true"></div>
+
+      <aside class="section-rail" aria-label="Page sections">
+        <span class="section-rail__line" aria-hidden="true"></span>
+        <a class="is-active" href="#home" data-rail-link="01"><i></i><span>01</span></a>
+        <a href="#museum" data-rail-link="02"><i></i><span>02</span></a>
+        <a href="#exhibition" data-rail-link="03"><i></i><span>03</span></a>
+        <a href="#visit" data-rail-link="04"><i></i><span>04</span></a>
+      </aside>
+
+      <div class="hero__copy">
+        <p class="eyebrow"><span></span> Nova Space Museum</p>
+        <h1 id="hero-title">
+          <span>Beyond the</span>
+          <span class="title-ghost">Horizon</span>
+        </h1>
+        <p class="hero__intro">Step past the familiar and into the forces that shape the universe.</p>
+        <button class="outline-cta" type="button" data-open-tickets>
+          <span>Get tickets</span><b aria-hidden="true">↗</b>
+        </button>
+      </div>
+
+      <div class="astronaut-wrap" aria-hidden="true">
+        <div class="astronaut-glow"></div>
+        <img class="astronaut" src="assets/Astronaut-floating.webp" alt="">
+      </div>
+
+      <div class="hero__coordinates" aria-hidden="true">
+        <span>28° 36′ 25″ N</span>
+        <span>80° 36′ 15″ W</span>
+      </div>
+
+      <a class="scroll-cue" href="#museum">
+        <span>Scroll down</span>
+        <i aria-hidden="true"></i>
+      </a>
+
+      <div class="hero__footer">
+        <span>Open Thu—Sun · 10:00—18:00</span>
+        <div class="socials" aria-label="Social links">
+          <a href="#" aria-label="Dribbble">◉</a>
+          <a href="#" aria-label="Behance">Bē</a>
+          <a href="#" aria-label="Instagram">◎</a>
+        </div>
+        <span>Nova / 2026</span>
+      </div>
+    </section>
+
+    <section class="manifesto bkn-slide bkn-slide-2" id="museum" data-section="02" aria-labelledby="manifesto-title">
+      <div class="manifesto__scene" aria-hidden="true"></div>
+      <div class="manifesto__veil" aria-hidden="true"></div>
+
+      <div class="section-shell manifesto__content reveal">
+        <p class="eyebrow"><span></span> A universe of discovery</p>
+        <h2 id="manifesto-title">Beyond what<br>we know</h2>
+        <p>Nova Space Museum takes you further than imagination—into the mysterious forces and wonders that lie beyond our world. Real artifacts, immersive exhibitions, and a deeper perspective.</p>
+        <a class="text-link" href="#exhibition">Our mission <span aria-hidden="true">→</span></a>
+      </div>
+
+      <div class="manifesto__question" aria-hidden="true">
+        <span>Some</span><span>questions</span><span>take you</span><span>further</span>
+      </div>
+    </section>
+
+    <section class="exhibitions" id="exhibition" data-section="03" aria-labelledby="exhibitions-title">
+      <div class="section-shell">
+        <div class="section-heading reveal">
+          <p class="eyebrow"><span></span> Featured exhibitions</p>
+          <h2 id="exhibitions-title">Three paths into<br>the unknown</h2>
+          <a class="text-link" href="#exhibit-grid">View all exhibitions <span aria-hidden="true">↗</span></a>
+        </div>
+
+        <div class="exhibit-grid" id="exhibit-grid">
+          <article class="exhibit-card reveal">
+            <div class="exhibit-card__image">
+              <img src="assets/Floating-1.webp" alt="A red-suited astronaut floating above a field of red flowers">
+              <span class="exhibit-card__index">01</span>
+            </div>
+            <div class="exhibit-card__body">
+              <p>Human frontiers</p>
+              <h3>The astronaut</h3>
+              <button type="button" data-card-detail="astronaut">Learn more <span>→</span></button>
+            </div>
+          </article>
+
+          <article class="exhibit-card reveal">
+            <div class="exhibit-card__image">
+              <img src="assets/Background-hero-1.webp" alt="A glowing red cosmic singularity surrounded by fragments">
+              <span class="exhibit-card__index">02</span>
+            </div>
+            <div class="exhibit-card__body">
+              <p>The unseen forces</p>
+              <h3>Cosmic forces</h3>
+              <button type="button" data-card-detail="forces">Learn more <span>→</span></button>
+            </div>
+          </article>
+
+          <article class="exhibit-card reveal">
+            <div class="exhibit-card__image">
+              <img src="assets/Background-3.webp" alt="A distant red planet beyond a dark alien landscape">
+              <span class="exhibit-card__index">03</span>
+            </div>
+            <div class="exhibit-card__body">
+              <p>New places, other skies</p>
+              <h3>Distant worlds</h3>
+              <button type="button" data-card-detail="worlds">Learn more <span>→</span></button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="visit" id="visit" data-section="04" aria-labelledby="visit-title">
+      <div class="visit__backdrop" aria-hidden="true"></div>
+      <div class="section-shell visit__content reveal">
+        <p class="eyebrow"><span></span> Be part of what's next</p>
+        <h2 id="visit-title">A brighter tomorrow<br>lives further out</h2>
+        <button class="solid-cta" type="button" data-open-tickets>Plan your visit <span aria-hidden="true">→</span></button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="brand brand--footer" href="#home">
+      <span class="brand__mark" aria-hidden="true"></span>
+      <span>Nova Space Museum</span>
+    </a>
+    <nav aria-label="Footer navigation">
+      <a href="#exhibition">Exhibitions</a>
+      <a href="#museum">Museum</a>
+      <a href="#visit">Visit</a>
+      <button type="button" data-open-tickets>Tickets</button>
+    </nav>
+    <p>Explore beyond the known.</p>
+  </footer>
+
+  <dialog class="ticket-dialog" id="ticket-dialog" aria-labelledby="ticket-title">
+    <button class="dialog-close" type="button" data-close-dialog aria-label="Close ticket form">×</button>
+    <p class="eyebrow"><span></span> Reserve your orbit</p>
+    <h2 id="ticket-title">Visit Nova</h2>
+    <p>Choose your exhibition and we'll prepare your boarding details.</p>
+    <form id="ticket-form">
+      <label>
+        <span>Your email</span>
+        <input type="email" name="email" placeholder="explorer@earth.com" required>
+      </label>
+      <label>
+        <span>Exhibition</span>
+        <select name="exhibition">
+          <option>The Astronaut</option>
+          <option>Cosmic Forces</option>
+          <option>Distant Worlds</option>
+        </select>
+      </label>
+      <button class="solid-cta" type="submit">Request tickets <span>→</span></button>
+    </form>
+    <p class="form-success" role="status" hidden>Your request is in orbit. Watch your inbox.</p>
+  </dialog>
+
+  <script src="script.js"></script>
+</body>
+</html>
