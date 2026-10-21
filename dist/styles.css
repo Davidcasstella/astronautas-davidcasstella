@@ -132,6 +132,44 @@ img { display: block; max-width: 100%; }
 .hero__footer { position: absolute; z-index: 8; bottom: 0; left: 4.4vw; right: 4.4vw; height: 58px; display: flex; align-items: center; justify-content: space-between; border-top: 1px solid var(--line); font-size: 8px; letter-spacing: .16em; text-transform: uppercase; color: rgba(255,255,255,.45); }
 .socials { display: flex; gap: 23px; font-size: 13px; color: rgba(255,255,255,.7); }
 
+.orbit-hero {
+  position: relative; min-height: 100svh; overflow: hidden; isolation: isolate; background: #050303;
+}
+.orbit-hero__background {
+  position: absolute; z-index: -4; inset: 0;
+  background-image: linear-gradient(90deg, rgba(3,5,8,.58) 0%, rgba(3,5,8,.08) 47%, rgba(5,1,1,.14) 100%), url("assets/Background-hero-1.webp");
+  background-size: cover; background-position: center center; background-repeat: no-repeat;
+}
+.orbit-hero::after {
+  content: ""; position: absolute; z-index: -1; inset: 0; pointer-events: none;
+  background: linear-gradient(180deg, rgba(0,0,0,.24), transparent 24%, transparent 72%, rgba(2,1,1,.76));
+}
+.orbit-motion {
+  position: absolute; z-index: -2; left: 64%; top: 43%; width: min(54vw, 760px); aspect-ratio: 1;
+  transform: translate(-50%, -50%); mix-blend-mode: screen; pointer-events: none;
+  -webkit-mask-image: radial-gradient(circle at center, #000 0%, #000 69%, transparent 84%);
+  mask-image: radial-gradient(circle at center, #000 0%, #000 69%, transparent 84%);
+}
+.orbit-motion video { width: 100%; height: 100%; object-fit: contain; }
+.orbit-hero__copy {
+  position: absolute; z-index: 4; left: 11.5vw; top: 50%; width: min(850px, 65vw); transform: translateY(-42%);
+}
+.orbit-hero__copy h2 {
+  margin: 0; font-family: "Anton", Impact, sans-serif; font-size: clamp(90px, 10.5vw, 170px);
+  line-height: .88; letter-spacing: -.025em; text-transform: uppercase; white-space: nowrap;
+  color: transparent; background: linear-gradient(180deg, #f1efec 0%, #d5d5d3 50%, rgba(116,120,120,.34) 90%);
+  -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;
+}
+.orbit-hero__copy .outline-cta { margin-top: 34px; }
+.orbit-astronaut {
+  position: absolute; z-index: 5; left: 64%; top: 43.5%; width: clamp(250px, 21vw, 370px);
+  transform: translate(-50%, -50%); pointer-events: none;
+}
+.orbit-astronaut img {
+  width: 100%; height: auto; filter: drop-shadow(0 30px 24px rgba(0,0,0,.62));
+}
+.section-rail--orbit { z-index: 9; }
+
 .section-shell { width: var(--shell); margin-inline: auto; position: relative; z-index: 4; }
 .manifesto { position: relative; min-height: 88vh; display: flex; align-items: center; overflow: hidden; isolation: isolate; background: #060303; }
 .manifesto__scene { position: absolute; z-index: -3; inset: 0; background: url("assets/Background-3.webp") center/cover no-repeat; transform: scale(1.01); }
@@ -209,6 +247,9 @@ img { display: block; max-width: 100%; }
   .hero__copy { left: 10vw; width: 70vw; }
   .hero h1 { font-size: clamp(76px, 12vw, 120px); }
   .astronaut-wrap { right: 9vw; top: 45%; width: min(29vw, 390px); }
+  .orbit-motion { left: 66%; width: min(66vw, 690px); }
+  .orbit-hero__copy { left: 10vw; }
+  .orbit-astronaut { left: 66%; width: min(25vw, 340px); }
   .manifesto__question { display: none; }
   .section-heading { display: block; }
   .section-heading .text-link { margin-top: 28px; }
@@ -241,6 +282,14 @@ img { display: block; max-width: 100%; }
   .hero__footer { left: 22px; right: 22px; height: 54px; justify-content: center; }
   .hero__footer > span { display: none; }
   .socials { gap: 30px; }
+  .orbit-hero__background { background-position: 61% center; }
+  .orbit-motion { left: 50%; top: 41%; width: 145vw; }
+  .orbit-hero__copy { top: 48%; left: 18px; right: 18px; width: auto; transform: translateY(-50%); text-align: center; }
+  .orbit-hero__copy .eyebrow { display: none; }
+  .orbit-hero__copy h2 { font-size: clamp(63px, 20vw, 92px); white-space: normal; }
+  .orbit-hero__copy .outline-cta { margin-top: 42vh; background: rgba(111,5,9,.64); }
+  .orbit-astronaut { left: 50%; top: 43%; width: min(66vw, 315px); }
+  .section-rail--orbit { display: none; }
   .manifesto { min-height: 88svh; }
   .manifesto__scene { background-position: 67% center; }
   .manifesto::after { background: linear-gradient(180deg, rgba(6,3,3,.24), rgba(6,3,3,.94) 72%); }
@@ -265,4 +314,5 @@ img { display: block; max-width: 100%; }
   html { scroll-behavior: auto; }
   *, *::before, *::after { animation-duration: .001ms !important; animation-iteration-count: 1 !important; scroll-behavior: auto !important; transition-duration: .001ms !important; }
   .reveal { opacity: 1; transform: none; }
+  .orbit-motion video { display: none; }
 }

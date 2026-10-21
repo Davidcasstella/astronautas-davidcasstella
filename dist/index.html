@@ -42,9 +42,10 @@
       <aside class="section-rail" aria-label="Page sections">
         <span class="section-rail__line" aria-hidden="true"></span>
         <a class="is-active" href="#home" data-rail-link="01"><i></i><span>01</span></a>
-        <a href="#museum" data-rail-link="02"><i></i><span>02</span></a>
-        <a href="#exhibition" data-rail-link="03"><i></i><span>03</span></a>
-        <a href="#visit" data-rail-link="04"><i></i><span>04</span></a>
+        <a href="#orbit" data-rail-link="02"><i></i><span>02</span></a>
+        <a href="#museum" data-rail-link="03"><i></i><span>03</span></a>
+        <a href="#exhibition" data-rail-link="04"><i></i><span>04</span></a>
+        <a href="#visit" data-rail-link="05"><i></i><span>05</span></a>
       </aside>
 
       <div class="hero__copy">
@@ -69,7 +70,7 @@
         <span>80° 36′ 15″ W</span>
       </div>
 
-      <a class="scroll-cue" href="#museum">
+      <a class="scroll-cue" href="#orbit">
         <span>Scroll down</span>
         <i aria-hidden="true"></i>
       </a>
@@ -85,7 +86,58 @@
       </div>
     </section>
 
-    <section class="manifesto bkn-slide bkn-slide-2" id="museum" data-section="02" aria-labelledby="manifesto-title">
+    <section class="orbit-hero bkn-slide bkn-slide-2" id="orbit" data-section="02" aria-labelledby="orbit-title">
+      <div class="orbit-hero__background" aria-hidden="true"></div>
+      <div class="orbit-motion" aria-hidden="true">
+        <video autoplay muted loop playsinline preload="metadata">
+          <source src="assets/Transparent%20video-1.webm" type="video/webm">
+        </video>
+      </div>
+      <div class="hero__grain" aria-hidden="true"></div>
+
+      <aside class="section-rail section-rail--orbit" aria-label="Page sections">
+        <span class="section-rail__line" aria-hidden="true"></span>
+        <a href="#home" data-rail-link="01"><i></i><span>01</span></a>
+        <a class="is-active" href="#orbit" data-rail-link="02"><i></i><span>02</span></a>
+        <a href="#museum" data-rail-link="03"><i></i><span>03</span></a>
+        <a href="#exhibition" data-rail-link="04"><i></i><span>04</span></a>
+        <a href="#visit" data-rail-link="05"><i></i><span>05</span></a>
+      </aside>
+
+      <div class="orbit-hero__copy">
+        <p class="eyebrow"><span></span> Nova Space Museum</p>
+        <h2 id="orbit-title">Out of orbit</h2>
+        <button class="outline-cta" type="button" data-open-tickets>
+          <span>Get tickets</span><b aria-hidden="true">→</b>
+        </button>
+      </div>
+
+      <div class="orbit-astronaut" aria-hidden="true">
+        <img src="assets/Astronaut-floating.webp" alt="">
+      </div>
+
+      <div class="hero__coordinates" aria-hidden="true">
+        <span>28° 36′ 25″ N</span>
+        <span>73° 30′ 29″ E</span>
+      </div>
+
+      <a class="scroll-cue" href="#museum">
+        <span>Scroll down</span>
+        <i aria-hidden="true"></i>
+      </a>
+
+      <div class="hero__footer">
+        <span>Beyond mapped space</span>
+        <div class="socials" aria-label="Social links">
+          <a href="#" aria-label="Dribbble">◉</a>
+          <a href="#" aria-label="Behance">Bē</a>
+          <a href="#" aria-label="Instagram">◎</a>
+        </div>
+        <span>Nova / 2026</span>
+      </div>
+    </section>
+
+    <section class="manifesto" id="museum" data-section="03" aria-labelledby="manifesto-title">
       <div class="manifesto__scene" aria-hidden="true"></div>
       <div class="manifesto__veil" aria-hidden="true"></div>
 
@@ -101,7 +153,7 @@
       </div>
     </section>
 
-    <section class="exhibitions" id="exhibition" data-section="03" aria-labelledby="exhibitions-title">
+    <section class="exhibitions" id="exhibition" data-section="04" aria-labelledby="exhibitions-title">
       <div class="section-shell">
         <div class="section-heading reveal">
           <p class="eyebrow"><span></span> Featured exhibitions</p>
@@ -149,7 +201,7 @@
       </div>
     </section>
 
-    <section class="visit" id="visit" data-section="04" aria-labelledby="visit-title">
+    <section class="visit" id="visit" data-section="05" aria-labelledby="visit-title">
       <div class="visit__backdrop" aria-hidden="true"></div>
       <div class="section-shell visit__content reveal">
         <p class="eyebrow"><span></span> Be part of what's next</p>
